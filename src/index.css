@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app{
+  height: 100%;
+  background-color: black;
+  /* background-color: #010026; */
+  @apply text-white;
+  --transition:all 400ms ease;
+}
+/* MY */
+.custom-box-shadow {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+              inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+              -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+              0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+              0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+.cir22{
+  fill: none; 
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
+}
+@keyframes anim{
+  100%{
+    stroke-dashoffset: 181;
+  }
+
+}
+
