@@ -63,39 +63,19 @@ const Projects = () => {
       </motion.div>
 
       {/* PROJECTS */}
-      <div className="flex justify-center">
-        <motion.div
-          className="sm:grid sm:grid-cols-3"
-          variants={container}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-        >
-          {/* ROW 1 */}
-          <div
-            className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            BEAUTIFUL USER INTERFACES
-          </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
-
-          {/* ROW 2 */}
-          {/* <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" /> */}
-
-          {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
-          <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            SMOOTH USER EXPERIENCE
-          </div>
-        </motion.div>
+      <div className="flex justify-center ">
+        <div className="relative px-4 w-[30%] border-black mx-4 bg-white text-black">
+          <h2 className=" absolute left-1/2 transform -translate-x-1/2">WrestlingHub</h2>
+          <div className="mt-[4vh]">WrestlingHub is ultimate treat for pro-wrestling fans where they can read unheard stories about their favourite superstars, watch best matches of all time etc</div>
+        </div>
+        <div className="relative mx-4 px-4 w-[30%] border-black bg-white text-black">
+        <h2 className=" absolute left-1/2 transform -translate-x-1/2">CampusConnectLive</h2>
+          <div className="mt-[4vh]">With CampusConnectLive, I am aiming to solve a real world problem.Using this an app, no student can ever misbehave in an online meeting helping colleges and companies to carry out a better flow of communication.</div>
+        </div>
+        <div className=" relative px-4  w-[30%] border-black bg-white text-black">
+        <h2 className="absolute left-1/2 transform -translate-x-1/2">CustomTube</h2>
+          <div className="mt-[4vh]">A backend project trying to emulate the backend of youtube.From creating the data models, to trying out various practices for writing standard code has been my major area of focus. I have also tried to implement mongoDB aggregation models</div>
+        </div>
       </div>
     </section>
   );

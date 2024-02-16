@@ -14,6 +14,7 @@ import People from "./components/People/People"
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 import Myskills1 from "./components/newSkills/Myskills1";
+import Map from "./components/Map";
 
 
 

@@ -68,7 +68,7 @@ const Landing = ({ setSelectedpage }) => {
          <div className="flex flex-col gap-3">
           <h1 className="text-5xl font-bold text-white">
             {""}Hi,Im<span className="text-designColor">{" "}Aakash Chaudhary</span></h1>
-            <h2 className="text-4xl font-bold text-white" >a <span>{text}</span>
+            <h2 className="text-4xl font-bold text-white" ><span>{text}</span>
             <Cursor 
             cursorBlinking="false"
             cursorStyle="|"
@@ -91,7 +91,7 @@ const Landing = ({ setSelectedpage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+            className="bg-white text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedpage("contact")}
             href="#contact"

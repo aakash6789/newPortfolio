@@ -1,6 +1,16 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import styled from "styled-components";
+import Map from "../components/Map.jsx";
+
+const Right = styled.div`
+  flex: 1;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 
 const Contact = () => {
  const {
@@ -15,7 +25,7 @@ const Contact = () => {
     }
  }
  return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="contact py-48" >
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -51,7 +61,7 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/manpc.jpg" alt="contact" />
+          {/* <img src="../assets/manpc.jpg" alt="contact" /> */}
         </motion.div>
 
         <motion.div
@@ -65,7 +75,7 @@ const Contact = () => {
           }}
           className="basis-1/2 mt-10 md:mt-0"
         >
-          <form
+          <form 
             target="_blank"
             onSubmit={onSubmit}
             action="https://formsubmit.co/5ecd19ef8444bbf565ad386d1e230b92"
@@ -124,12 +134,15 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-[#F5DEB3]font-semibold text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
+              className="p-5 bg-[#F5DEB3]font-semibold bg-yellow text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
               type="submit"
             >
               SEND ME A MESSAGE
             </button>
           </form>
+          <Right>
+          <Map />
+        </Right>
         </motion.div>
       </div>
     </section>

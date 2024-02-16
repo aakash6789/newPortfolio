@@ -40,7 +40,9 @@
     gap: 1rem;
 }
 .fixer{
-    z-index: 6;
+    /* z-index: 6; */
+    /* padding-top: 100px; */
+    /* position: absolute; */
     /* margin-top:200px; */
 }
 /* .experience_frontend{

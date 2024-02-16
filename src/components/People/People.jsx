@@ -56,7 +56,7 @@ const People = () => {
   
   
           <div className={`yPaddings h-[550px] ${css.comments}`}>
-            {/* to use slider , we have to inlcude css in index.html head */}
+ 
             <Slider {...sliderSettings} className={` ${css.slider}`}>
               {comments.map((comment, i) => {
                 return (
@@ -67,7 +67,10 @@ const People = () => {
                       <span className="text-2xl">{comment.name}</span>
                       <span className="text-1xl">{comment.post}</span>
                       <div>
-                      {isAboveSmallScreens?(<img src={comment.img}  style={{marginTop:"-4px",marginLeft:"590px",width:"70px",height:"70px"}} alt="" />):(<img className="ml-[300px]" src={comment.img} alt="" />)}
+                      {/* {isAboveSmallScreens?(<img src={comment.img}  style={{marginTop:"-4px",marginLeft:"590px",width:"70px",height:"70px"}} alt="" />):(<img className="ml-[500px]" src={comment.img} style={{marginTop:"-4px",marginLeft:"150px",width:"70px",height:"70px"}}   alt="" />)} */}
+                      <div className=''>
+                     { isAboveSmallScreens?<img src={comment.img} alt='img' style={{marginLeft:"45%"}}  />:<img src={comment.img} alt='img' style={{marginLeft:"36%"}}  />}
+                      </div>
                       </div>
                     </div>
                   </div>
