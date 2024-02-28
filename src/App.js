@@ -3,10 +3,8 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar"
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
-import React,{useRef} from "react";
+import React from "react";
 import LineGradient from "./components/LineGradient";
-import Burr from "./scenes/Burr";
-import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
 import { motion } from "framer-motion";
 import Testimonials from "./scenes/Testimonials";
@@ -14,7 +12,7 @@ import People from "./components/People/People"
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 import Myskills1 from "./components/newSkills/Myskills1";
-import Map from "./components/Map";
+// import Map from "./components/Map";
 
 
 
@@ -53,7 +51,7 @@ function App() {
           <Landing setSelectedpage={setSelectedpage} />
         </motion.div>
       </div>
-      <LineGradient/>
+      <LineGradient className='mt-32'/>
       <div className="w-5/6 mx-auto md:h-[2000px]">
         <motion.div
           margin="0 0 -200px 0"

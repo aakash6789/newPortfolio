@@ -19,7 +19,7 @@ const Landing = ({ setSelectedpage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10 mb-4"
     >
       {/* IMAGE SECTION */}
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
@@ -66,9 +66,9 @@ const Landing = ({ setSelectedpage }) => {
 
           <p className="mt-20 mb-7 text-1xl text-center md:text-start">
          <div className="flex flex-col gap-3">
-          <h1 className="text-5xl font-bold text-white">
+          <h1 className="text-4xl font-bold text-white">
             {""}Hi,Im<span className="text-designColor">{" "}Aakash Chaudhary</span></h1>
-            <h2 className="text-4xl font-bold text-white" ><span>{text}</span>
+            <h2 className="text-3xl font-bold text-white" ><span>{text}</span>
             <Cursor 
             cursorBlinking="false"
             cursorStyle="|"
