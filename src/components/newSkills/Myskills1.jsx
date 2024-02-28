@@ -28,7 +28,7 @@ const Myskills1=()=>{
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
     return(
-        <section id="skills" className="md:h-full text-black">
+        <section id="skills" className="md:h-full text-black w-full mt-16">
             <h5>What skills I have</h5>
                 <h2 className="text-4xl font-bold pb-[80px] pt-[40px] text-center text-white">My Experience</h2>
             <div className="container experience_container">
@@ -132,9 +132,9 @@ const Myskills1=()=>{
             viewport={{ once: false, amount: 0.25 }}
             className={` ${css.wrapper} text-white`}>
             <a className="anchor" id="work"></a>
-        {isAboveSmallScreens?  <div className={` ${css.container}`}>
+          <div className={` ${css.container}`}>
         
-        <div className={` ${css.experiences}`}>
+        <div className={` ${css.experiences} relative text-[0.7rem]`}>
           {/* {workExp.map((exp, i) => {
             return (
               <motion.div variants={textVariant2} key={i} className={`flex-row ${css.exp} `} >
@@ -157,7 +157,7 @@ const Myskills1=()=>{
           })} */}
             
             
-              <motion.div variants={textVariant2}  className={`flex-row ${css.exp} `} >
+              <motion.div variants={textVariant2}  className={`flex-row ${css.exp} relative`} >
                 <div className="fixer" style={{marginTop:"150px"}}>
                 <div className={`w-[3/4] ${css.post} `}>
                   <div style={{marginBottom:"100px"}}>
@@ -175,24 +175,21 @@ const Myskills1=()=>{
                   
                 </div>
                 </div>
-                {isAboveLarge?<div style={{marginLeft:"1084px"}} className={`${css.role} ml-[1084px]`}>
-                  <div style={{marginTop:"-645px",marginBottom:"166px"}}>
-                  <h1 className="text-3xl ">Schooling</h1>
-                  <p>I did my schooling from RBK school near Mumbai,I was heavily involved in academics especially technology,sports and also I was part of student council</p>
+                <div  className={`${css.role} absolute right-0 w-[40%] `}>
+                  <div style={{marginTop:"-645px",marginBottom:"6px"}} className="absolute right-0" >
+                  <h1 className="text-[1.5rem] mb-2 ">Schooling</h1>
+                  <p className="pl-[0%]">I did my schooling from RBK school near Mumbai,I was heavily involved in academics especially technology,sports and also I was part of student council</p>
                   </div>
-                  <div style={{marginBottom:"156px"}}>
-                  <h1 className="text-3xl ">Web Devloper</h1>
+                  <div  className=" absolute right-0 mt-[-380px]">
+                  <h1 className="text-[1.5rem] ">Web Devloper</h1>
                   <p>In my college,apart from academics and sports I developed a keen interest in field of technology development,so I stepped up in web development</p>
                   </div>
-                  <div>
-                  <h1 className="text-3xl ">Intern</h1>
+                  <div style={{marginTop:"-10vh"}} className="absolute right-0">
+                  <h1 className="text-[1.5rem] ">Intern</h1>
                   <p>I was a part of a team which was responsible to make website for teachers,which keeps track of their annual performance and gives them entire report by end of academic year,this website is now deployed and handling data of more than 200 teachers</p>
                   </div>
                  
-                </div>:<div className={`${css.role1} `}>
-                  <h1 className="text-3xl "></h1>
-                  <p></p>
-                </div>}
+                </div>
                 
               </motion.div>
            
@@ -200,7 +197,7 @@ const Myskills1=()=>{
 
 
 
-          <motion.div variants={zoomIn(1, 1)} className={css.progressbar} style={{marginTop:"-784px"}}>
+          <motion.div variants={zoomIn(1, 1)} className={`${css.progressbar} absolute left-[0%]`} style={{marginTop:"-584px"}} >
             <motion.div variants={fadeIn("down", "tween", 2, 1.5)} className={css.line}></motion.div>
             <div><div className={css.circle} style={{background: "#286F6C",marginTop:"10px"}}></div></div>
             <div><div className={css.circle} style={{background: "#F2704E",marginTop:"69px"}}></div></div>
@@ -208,7 +205,7 @@ const Myskills1=()=>{
           </motion.div>
 
         </div>
-      </div>:<div></div>}
+      </div>:<div></div>
              
             </motion.section>
            :

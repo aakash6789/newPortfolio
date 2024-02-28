@@ -64,8 +64,8 @@ function App() {
           {/* <MySkills /> */}
         </motion.div>
         </div>
-       <LineGradient/>
-       <div className="w-5/6 mx-auto ">
+       {/* <LineGradient className='mt-[540px]'/> */}
+       <div className="w-full mx-auto ">
         {/* <Projects/> */}
         <motion.div
           margin="0 0 -200px 0"
@@ -75,7 +75,7 @@ function App() {
           <Projects />
         </motion.div>
         </div>
-        <LineGradient/>
+        <LineGradient />
         <div className="w-4/6 mx-auto ">
         <motion.div
           margin="0 0 -200px 0"

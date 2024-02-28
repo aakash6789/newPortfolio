@@ -24,16 +24,22 @@
                     z-index: 5;
                     text-align: left;
                     margin-top:80px ;
-                    width: 200px;
+                    // width: 200px;
+                    width: 40%;
                     // display: inline;
                     padding-top: 40px;
                     // margin-top: 300px;
                 }
 
                 .role {
-                    width: 600px;
+                    // width: 600px;
+                    // width: 40%;
+                    line-height: 30px;
                     text-align: right;
                     margin-left: 2rem;
+                }
+                >h1{
+                    margin-bottom: 5%;
                 }
                 .role1 {
                     // width: 600px;
@@ -60,7 +66,7 @@
                     background-position: right;
                     background-size: 2px 30px;
                     background-repeat: repeat-y;
-                    left: 48%;
+                    left: 44%;
                     z-index: 1;
                     border-radius: 5px;
                 }
