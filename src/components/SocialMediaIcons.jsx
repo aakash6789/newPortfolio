@@ -4,7 +4,7 @@ return(
     <div className="flex justify-center md:justify-start my-10 gap-7">
         <a
             className="hover:opacity-50 transistion duration-500"
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/aakash-chaudhary-6312a922a/"
             target="_blank"
             rel="noreferrer"
             >
@@ -13,7 +13,7 @@ return(
         </a>
         <a
             className="hover:opacity-50 transistion duration-500"
-            href="https://www.instagram.com"
+            href="https://github.com/aakash6789"
             target="_blank"
             rel="noreferrer"
             >
@@ -21,7 +21,7 @@ return(
         </a>
         <a
             className="hover:opacity-50 transistion duration-500"
-            href="https://www.github.com"
+            href="https://github.com/aakash6789"
             target="_blank"
             rel="noreferrer"
             >
