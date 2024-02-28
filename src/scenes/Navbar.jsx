@@ -21,13 +21,13 @@ const Navbar=({isTopOfPage,selectedPage,setSelectedpage})=>{
     const navbarBackground=isTopOfPage?"":"bg-white";
 
     return(
-        <nav style={{color:isTopOfPage?"white":"black"}} className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
+        <nav style={{color:isTopOfPage?"white":"black"}} className={`${navbarBackground} z-40 w-full fixed top-0 py-4`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
             <h4 className="font-playfair text-3xl font-bold">AC</h4>
 
             {/* DESKTOP NAV */}
             {isAboveSmallScreens?( 
-                <div  className={"flex justify-between gap-16 font-opensans text-sm font-semibold"}>
+                <div  className={"flex justify-between gap-16 font-opensans text-sm  font-semibold"}>
                     <Link
                     page="Home"
                     selectedPage={selectedPage}
