@@ -39,7 +39,7 @@ const Contact = () => {
         className="flex justify-end w-full"
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
+          <p className="font-playfair font-semibold text-4xl gh">
             <span className="text-wheat">CONTACT ME</span> TO GET STARTED
           </p>
           <div className="flex md:justify-end my-5">
