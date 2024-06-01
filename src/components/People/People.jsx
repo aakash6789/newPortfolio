@@ -67,9 +67,8 @@ const People = () => {
                       <span className="text-2xl">{comment.name}</span>
                       <span className="text-1xl">{comment.post}</span>
                       <div>
-                      {/* {isAboveSmallScreens?(<img src={comment.img}  style={{marginTop:"-4px",marginLeft:"590px",width:"70px",height:"70px"}} alt="" />):(<img className="ml-[500px]" src={comment.img} style={{marginTop:"-4px",marginLeft:"150px",width:"70px",height:"70px"}}   alt="" />)} */}
-                      <div className=''>
-                     { isAboveSmallScreens?<img src={comment.img} alt='img' style={{marginLeft:"45%"}}  />:<img src={comment.img} alt='img' style={{marginLeft:"36%"}}  />}
+                      <div className='flex justify-center'>
+                    <img src={comment.img} alt='img' className=" block"  />
                       </div>
                       </div>
                     </div>

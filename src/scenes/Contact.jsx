@@ -3,6 +3,14 @@ import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import Map from "../components/Map.jsx";
+import features from '../features.json'
+import {
+  ComposableMap,
+  Geographies,
+  Geography,
+  Annotation,
+  ZoomableGroup
+} from "react-simple-maps";
 
 const Right = styled.div`
   flex: 1;
@@ -11,6 +19,7 @@ const Right = styled.div`
     display: none;
   }
 `;
+
 
 const Contact = () => {
  const {
@@ -82,7 +91,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-white font-semibold placeholder-opaque-black p-3 text-black"
+              className="w-full rounded-xl bg-white font-semibold placeholder-opaque-black p-3 text-black"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -98,7 +107,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full bg-white font-semibold placeholder-opaque-black p-3 mt-5 text-black"
+              className="w-full  rounded-xl bg-white font-semibold placeholder-opaque-black p-3 mt-5 text-black"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -114,7 +123,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-white font-semibold placeholder-opaque-black p-3 mt-5 text-black"
+              className="w-full  rounded-xl bg-white font-semibold placeholder-opaque-black p-3 mt-5 text-black"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -134,7 +143,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-[#F5DEB3]font-semibold bg-yellow text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
+              className="p-5  rounded-xl bg-[#F5DEB3]font-semibold bg-yellow text-deep-blue mt-5 hover:bg-white hover:text-black transition duration-500"
               type="submit"
             >
               SEND ME A MESSAGE
@@ -142,6 +151,18 @@ const Contact = () => {
           </form>
           <Right>
           <Map />
+          {/* <ComposableMap>
+      <Geographies geography={geoUrl}>
+        {({ geographies }) =>
+          geographies.map((geo) => (
+            <Geography key={geo.rsmKey} geography={geo} />
+          ))
+        }
+      </Geographies>
+    </ComposableMap> */}
+  
+
+
         </Right>
         </motion.div>
       </div>

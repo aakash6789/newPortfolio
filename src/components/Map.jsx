@@ -1,65 +1,4 @@
-// import React from "react";
-// import {
-//   ComposableMap,
-//   Geographies,
-//   Geography,
-//   Annotation,
-//   ZoomableGroup
-// } from "react-simple-maps";
 
-// const Map = () => {
-//   return (
-//     <ComposableMap
-//       projection="geoAzimuthalEqualArea"
-//       projectionConfig={{
-//         rotate: [-10.0, -52.0, 0],
-//         center: [-5, -3],
-//         scale: 1600
-//       }}
-//       style={{width:"100%", height:"100%"}}
-//     >
-//       <Geographies
-//         geography="/features.json"
-//         fill="#2C065D"
-//         stroke="#FFFFFF"
-//         strokeWidth={0.5}
-//       >
-//         {({ geographies }) =>
-//           geographies.map((geo) => (
-//             <Geography key={geo.rsmKey} geography={geo} />
-//           ))
-//         }
-//       </Geographies>
-//       <Annotation
-//         subject={[2.3522, 48.8566]}
-//         dx={-90}
-//         dy={-30}
-//         connectorProps={{
-//           stroke: "white",
-//           strokeWidth: 2,
-//           strokeLinecap: "round"
-//         }}
-//       >
-//         <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
-//           {"Paris"}
-//         </text>
-//       </Annotation>
-//       <Annotation
-//         subject={[21.01178, 52.22977]}
-//         dx={-90}
-//         dy={-30}
-//         connectorProps={{
-//           stroke: "white",
-//           strokeWidth: 2,
-//           strokeLinecap: "round"
-//         }}
-//       >
-//         
-//       </Annotation>
-//     </ComposableMap>
-//   );
-// };
-// export default Map;
 import React from "react";
 import {
   ComposableMap,
@@ -68,47 +7,40 @@ import {
   Annotation,
   ZoomableGroup
 } from "react-simple-maps";
+import features from '../features.json'
 
 const Map = () => {
   return (
-    <ComposableMap
-      projection="geoAzimuthalEqualArea"
-      projectionConfig={{
-        rotate: [-80.0, -52.0, 0],
-        center: [-5, -20],
-        scale: 300
+    <ComposableMap>
+    <Geographies geography={features}>
+      {({ geographies }) =>
+        geographies.map((geo) => (
+          <Geography key={geo.rsmKey} geography={geo} style={{
+            default: { fill: "#FFFFFF" },
+            hover: { fill: "#FFFFFF" },
+            pressed: { fill: "#FFFFFF" },
+          }} />
+        ))
+      }
+    </Geographies>
+    <Annotation
+      subject={[74.5937, 19.0760]}
+      dx={60}
+      dy={130}
+      connectorProps={{
+        stroke: "blue",
+        strokeWidth: 3,
+        strokeLinecap: "round"
       }}
     >
-      <Geographies
-        geography="https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json"
-        fill="#D6D6DA"
-        stroke="#FFFFFF"
-        strokeWidth={0.5}
-      >
-        {({ geographies }) =>
-          geographies.map((geo) => (
-            <Geography key={geo.rsmKey} geography={geo} />
-          ))
-        }
-      </Geographies>
-      <Annotation
-        subject={[74.5937, 19.0760]}
-        dx={-90}
-        dy={-30}
-        connectorProps={{
-          stroke: "blue",
-          strokeWidth: 3,
-          strokeLinecap: "round"
-        }}
-      >
-        {/* <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="#F53">
-          {"India"}
-        </text> */}
-        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
+      {/* <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="#F53">
         {"India"}
-        </text>
-      </Annotation>
-    </ComposableMap>
+      </text> */}
+      <text x="-2" y='8' textAnchor="end" alignmentBaseline="middle" fill="white">
+      {"India"}
+      </text>
+    </Annotation>
+  </ComposableMap>
   );
 };
 

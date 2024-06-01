@@ -181,7 +181,7 @@ export const headerVariants = {
       tenure: "Jun 2003 - Aug 2019",
       role: "Schooling",
       detail:
-        "I did my schooling from RBK school near Mumbai,I was heavily involved in academics especially technology,sports and also I was part of student council",
+        "I completed my schooling at RBK School near Mumbai, where I actively engaged in various academic and extracurricular activities. I had a particular passion for technology and sports.",
     },
     {
       place: "Self-Employed, Jaipur",

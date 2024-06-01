@@ -173,12 +173,12 @@ const Myskills1=()=>{
                   <p>Jun 2003 - Aug 2019</p>
                   </div>
                   <div style={{marginBottom:"100px",marginTop:"220px"}}>
-                  <h1>Self-Employed, Jaipur</h1>
-                  <p>Jan 2021 - Jan 2023</p>
-                  </div>
-                  <div style={{marginTop:"171px"}}>
                   <h1>Manipal University Jaipur</h1>
                   <p>Jan 2023 - May 2023</p>
+                  </div>
+                  <div style={{marginTop:"171px"}}>
+                  <h1>Troop</h1>
+                  <p>Mar 2024 - Present</p>
                   </div>
                   
                 </div>
@@ -186,15 +186,15 @@ const Myskills1=()=>{
                 <div  className={`${css.role} absolute right-0 w-[40%] `}>
                   <div style={{marginTop:"-645px",marginBottom:"6px"}} className="absolute right-0" >
                   <h1 className="text-[1.5rem] mb-2 ">Schooling</h1>
-                  <p className="pl-[0%]">I did my schooling from RBK school near Mumbai,I was heavily involved in academics especially technology,sports and also I was part of student council</p>
+                  <p className="pl-[0%]">I completed my schooling at RBK School near Mumbai, where I actively engaged in various academic and extracurricular activities. I had a particular passion for technology and sports.</p>
                   </div>
                   <div  className=" absolute right-0 mt-[-380px]">
-                  <h1 className="text-[1.5rem] ">Web Devloper</h1>
-                  <p>In my college,apart from academics and sports I developed a keen interest in field of technology development,so I stepped up in web development</p>
+                  <h1 className="text-[1.5rem] ">Frontend intern </h1>
+                  <p>I was a part of a team which was responsible to make website for teachers,which keeps track of their annual performance and gives them entire report by end of academic year,this website is now deployed and handling data of more than 200 teachers</p>
                   </div>
                   <div style={{marginTop:"-10vh"}} className="absolute right-0">
-                  <h1 className="text-[1.5rem] ">Intern</h1>
-                  <p>I was a part of a team which was responsible to make website for teachers,which keeps track of their annual performance and gives them entire report by end of academic year,this website is now deployed and handling data of more than 200 teachers</p>
+                  <h1 className="text-[1.5rem] ">SDE intern</h1>
+                  <p>Collaborated with a team to conceptualize and craft a clean 100 % completely responsive home page utilizing ReactJS and Tailwind CSS.</p>
                   </div>
                  
                 </div>
@@ -213,10 +213,10 @@ const Myskills1=()=>{
           </motion.div>
 
         </div>
-      </div>:<div></div>
+      </div><div></div>
              
             </motion.section>
-           :
+           
            
         
            

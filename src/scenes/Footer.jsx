@@ -16,13 +16,7 @@ const Footer = () => {
     //     </div>
     //   </div>
     // </footer>
-    <footer>
-      <div className="wave">
-        <div className="wave" id="wave1"></div>
-        <div className="wave" id="wave2"></div>
-        <div className="wave" id="wave3"></div>
-        <div className="wave" id="wave4"></div>
-      </div>
+    <footer className="bg-black text-white">
       <ul className="social_icon">
         {/* <li>
           <a href="#"></a>
@@ -36,11 +30,41 @@ const Footer = () => {
         <li>
           <a href="#"></a>
         </li> */}
-        <SocialMediaIcons/>
+        {/* <SocialMediaIcons/> */}
+        <div className="flex  justify-center md:justify-start my-10 gap-7">
+        <a
+            className="hover:opacity-50 transistion duration-500"
+            href="https://www.linkedin.com/in/aakash-chaudhary-6312a922a/"
+            target="_blank"
+            rel="noreferrer"
+            >
+            <img alt="linkedin-link" src="./assets/linkedin.png"/>
+            {/* <img alt="linkedin-link" src={linkedlnlogo}/> */}
+        </a>
+        <a
+            className="hover:opacity-50 transistion duration-500"
+            href="https://github.com/aakash6789"
+            target="_blank"
+            rel="noreferrer"
+            >
+            <img alt="instagram-link" src="./assets/instagram.png"/>
+        </a>
+        <a
+            className="hover:opacity-50 transistion duration-500"
+            href="https://github.com/aakash6789"
+            target="_blank"
+            rel="noreferrer"
+            >
+            <img alt="github-link" src="./assets/github (1).png"/>
+        </a>
+       
+        
+
+    </div>
         
       </ul>
       <div>
-        <p className="rights">@2023 AKASH CHAUDHARY || ALL RIGHTS RESERVED</p>
+        <p className="rights text-[0.8rem]">@2023 AKASH CHAUDHARY || ALL RIGHTS RESERVED</p>
         </div>
     </footer>
   );
