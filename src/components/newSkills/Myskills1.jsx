@@ -4,6 +4,7 @@ import {AiFillHtml5} from "react-icons/ai";
 import {BiLogoTailwindCss} from "react-icons/bi";
 import {BiSolidFileCss} from "react-icons/bi";
 import {BiLogoJavascript} from "react-icons/bi";
+import {BiLogoTypescript} from "react-icons/bi";
 import {SiMongodb} from "react-icons/si";
 import {BiLogoReact} from "react-icons/bi";
 import {SiExpress} from "react-icons/si";
@@ -116,6 +117,13 @@ const Myskills1=()=>{
                     <BiLogoJavascript/>
                     <div>
                     <h4>JAVASCRIPT</h4>
+                    <small className="text-light">Experienced</small>
+                    </div>
+                    </article>
+                    <article className="experience_details">
+                    <BiLogoTypescript/>
+                    <div>
+                    <h4>TYPESCRIPT</h4>
                     <small className="text-light">Experienced</small>
                     </div>
                     </article>
